@@ -1,0 +1,151 @@
+/* TABLE OF CONTENTS */
+
+/* ITEM 1 */
+/* ITEM 2 */
+/* ITEM 3 */
+
+/* BASIC STYLES AND COLORS*/
+*, 
+::before, 
+::after {
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --color-black: #000;
+    --color-ink: #2c3331;
+    --color-white: #ffffff;
+    --color-green: #2c594e;
+    --color-green-middle: #758981;
+    --color-green-light: #edefee;
+    --color-yellow: #efb139;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* FONT STYLES */
+
+/* OSWALD */
+@font-face {
+    font-family: 'Oswald';
+    src: url('../assets/fonts/Oswald/Oswald-ExtraLight.ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../assets/fonts/Oswald/Oswald-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../assets/fonts/Oswald/Oswald-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../assets/fonts/Oswald/Oswald-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../assets/fonts/Oswald/Oswald-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../assets/fonts/Oswald/Oswald-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* MONTSERRAT */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat/Montserrat-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat/Montserrat-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* TEXT */
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 6.4rem;
+    line-height: 7.2rem;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight:600;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+}
+
+h3 {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 2.8rem;
+}
+
+h4 {
+    font-family: 'Montserrat', serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+p {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.info_text {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2.0rem;
+}
+
+.link {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--color-yellow);
+}
+
+.breadcrumb {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    padding: 1em;
+    background: var(--color-yellow);
+}
+
+/* IMAGE ASPECT RATIO */
+
