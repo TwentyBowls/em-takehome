@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ACME</title>
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -19,7 +19,7 @@
     <a class="link" href="">link</a>
     <a class="breadcrumb">breadcrumb</a> -->
     <header class="header">
-        <div class="header__logo">LOGO</div>
+        <img src="./assets/ACME_Logo.svg" class="header__logo" alt="ACME Logo">
         <nav class="header__nav">
             <ul class="nav__list">
                 <li class="nav__subsection"></li>
@@ -90,16 +90,102 @@
         </article>
     </main>
     <section class="contact">
-
+        <h2 class="section__title">Contact</h2>
+        <div class="section__bg">
+                <img src="#" alt="Mark Musterman">
+                <h2 class="contact__name">Mark Musterman</h2>
+                <h4 class="contact__role">Marketing Assistent</h4>
+                <a class="contact__tel link"href="tel:49-174-358-645-26">49-174-358-645-26</a>
+                <p class="contact__availablity">Mo/Tu/Fr: <time>08:00 a.m. - 05:30 p.m.</time></p>
+        </div>
     </section>
     <section class="downloads">
-
+        <h2 class="section__title">Downloads</h2>
+        <div class="section__bg">
+                <ul class="downloads__list">
+                    <li class="downloads__item">
+                        <a class="downloads__link btn" href="">
+                            <div class='downloads__container'>
+                                <img class="downloads__symbol" src="./assets/Icons/Download.svg" alt="Download symbol">
+                                <span class='downloads__text'>North Pole as land</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="downloads__item">
+                        <a class="downloads__link btn" href="">
+                            <div class='downloads__container'>
+                                <img class="downloads__symbol" src="./assets/Icons/Download.svg" alt="Download symbol">
+                                <span class='downloads__text'>European mercator map</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="downloads__item">
+                        <a class="downloads__link btn" href="">
+                            <div class='downloads__container'>
+                                <img class="downloads__symbol" src="./assets/Icons/Download.svg" alt="Download symbol">
+                                <span class='downloads__text'>Early catographys around 1507</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="downloads__item">
+                        <a class="downloads__link btn" href="">
+                            <div class='downloads__container'>
+                                <img class="downloads__symbol" src="./assets/Icons/Download.svg" alt="Download symbol">
+                                <span class='downloads__text'>North passage</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+        </div>
     </section>
     <section class="links">
+        <h2 class="section__title">Links</h2>
+        <div class="section__bg">
+            <ul class="links__list">
+                <li class="links__item">
 
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact__container">
+            <h2 class="contact__title">Do you have any questions?</h2>
+            <form action="" class="contact__form">
+                <fieldset class="contact__fieldset">
+                    <label class="contact__text" for="name">Name</label>
+                    <input type="text" id="name" required>
+                    <label class="contact__text" for="email">Email</label>
+                    <input type="email" id="email" required>
+                    <label class="contact__text" for="phone">Phone (optional)</label>
+                    <input type="tel" id="phone">
+                    <label class="contact__text" for="country">Country</label>
+                    <select name="country" id="country">
+                        <option value="Germany">Germany</option>
+                        <option value="England">England</option>
+                    </select>
+                    <label class="contact__text" for="message">Your Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <input type="checkbox" id="privacy" name="privacy" value="true">
+                    <label for="privacy">I hereby consent to the processing of my data in accordance with the <a class="link" href="">privacy information</a>.</label>
+                    <button class="btn" type="submit">Send</button>
+                </fieldset>
+            </form>
+        </div>
     </section>
     <footer class="footer">
-
+        <div>
+            <a class="link" href="">Legal Notice</a>
+            <a class="link" href="">Privacy</a>
+        </div>
+        <div>
+            <span class="footer__socials"></span>
+            <span class="footer__socials"></span>
+            <span class="footer__socials"></span>
+        </div>
+        <div>
+            <span>2021 ACME. Part of the <a href="" class="link">ACME Group</a></span>
+        </div>
     </footer>
     <script src="./js/main.js"></script>
 </body>
