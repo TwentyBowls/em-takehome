@@ -21,9 +21,15 @@
     <header class="header">
         <div class="header__container container">
             <img src="./assets/ACME_Logo.svg" class="header__logo" alt="ACME Logo">
-            <nav class="header__nav">
+            <nav class="nav">
+                <button class="nav__toggle">
+                    <span class="nav__hamburger"></span>
+                </button>
                 <ul class="nav__list">
-                    <li class="nav__subsection"></li>
+                    <li class="nav__item"><a class="nav__link">Uebersicht</a></li>
+                    <li class="nav__item"><a class="nav__link">Dashboard</a></li>
+                    <li class="nav__item"><a class="nav__link">Konto</a></li>
+                    <li class="nav__item"><a class="nav__link">Abmelden</a></li>
                 </ul>
             </nav>
         </div>
@@ -57,7 +63,9 @@
         </header>
         <article class="article">
             <div class="container">
-                <div class="article__img"></div>
+                <div class="article__img-container">
+                    <img class="article__img" src="./assets/pics/News_1.jpeg" alt="Arctic landscape">
+                </div>
                 <span class="info"><time datetime="2021-08-23">23 / 08 / 2021</time></span>
                 <h2 class="article__title">The Smallest and shallowest World's Major Oceans</h2>
                 <p class="article__text">
