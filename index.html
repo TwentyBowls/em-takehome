@@ -98,43 +98,49 @@
                     <img class="contact__img" src="./assets/pics/Contacts_Mark-Musterman.png" alt="Mark Musterman">
                     <h2 class="contact__name">Mark Musterman</h2>
                     <h4 class="contact__role">Marketing Assistent</h4>
-                    <a class="contact__tel link"href="tel:49-174-358-645-26">49-174-358-645-26</a>
-                    <p class="contact__availablity">Mo/Tu/Fr: <time>08:00 a.m. - 05:30 p.m.</time></p>
+                    <ul class="contact__options aside__list">
+                        <li class="contact__phone svg-list-item">
+                            <a class="contact__tel link"href="tel:49-174-358-645-26">49-174-358-645-26</a>
+                        </li>
+                        <li class="contact__time svg-list-item">
+                            <p class="contact__availablity">Mo/Tu/Fr: <time>08:00 a.m. - 05:30 p.m.</time></p>
+                        </li>
+                    </ul>
             </div>
         </section>
         <section class="downloads aside">
             <h2 class="section__title">Downloads</h2>
             <div class="section__bg">
-                    <ul class="downloads__list">
-                        <li class="downloads__item">
-                            <a class="downloads__link btn" href="" download="north_pole_as_land">
-                                <div class='downloads__container'>
+                    <ul class="downloads__list aside__list">
+                        <li class="downloads__item svg-list-item">
+                            <a class="downloads__link" href="#" download="north_pole_as_land">
+                                <div class="downloads__container btn">
                                     <img class="downloads__symbol" src="./assets/Icons/Download.svg" alt="Download symbol">
-                                    <span class='downloads__text'>North Pole as land</span>
+                                    <span class="downloads__text">North Pole as land</span>
                                 </div>
                             </a>
                         </li>
-                        <li class="downloads__item">
-                            <a class="downloads__link btn" href="" download="european_mercator_map">
-                                <div class='downloads__container'>
+                        <li class="downloads__item svg-list-item">
+                            <a class="downloads__link" href="#" download="european_mercator_map">
+                                <div class="downloads__container btn">
                                     <img class="downloads__symbol" src="./assets/Icons/Download.svg" alt="Download symbol">
-                                    <span class='downloads__text'>European mercator map</span>
+                                    <span class="downloads__text">European mercator map</span>
                                 </div>
                             </a>
                         </li>
-                        <li class="downloads__item">
-                            <a class="downloads__link btn" href="" download="early_catographys_around_1507">
-                                <div class='downloads__container'>
+                        <li class="downloads__item svg-list-item">
+                            <a class="downloads__link" href="#" download="early_catographys_around_1507">
+                                <div class="downloads__container btn">
                                     <img class="downloads__symbol" src="./assets/Icons/Download.svg" alt="Download symbol">
-                                    <span class='downloads__text'>Early catographys around 1507</span>
+                                    <span class="downloads__text">Early catographys around 1507</span>
                                 </div>
                             </a>
                         </li>
-                        <li class="downloads__item">
-                            <a class="downloads__link btn" href="" download="north_passage">
-                                <div class='downloads__container'>
+                        <li class="downloads__item svg-list-item">
+                            <a class="downloads__link" href="#" download="north_passage">
+                                <div class="downloads__container btn">
                                     <img class="downloads__symbol" src="./assets/Icons/Download.svg" alt="Download symbol">
-                                    <span class='downloads__text'>North passage</span>
+                                    <span class="downloads__text">North passage</span>
                                 </div>
                             </a>
                         </li>
@@ -144,9 +150,15 @@
         <section class="links aside">
             <h2 class="section__title">Links</h2>
             <div class="section__bg">
-                <ul class="links__list">
-                    <li class="links__item">
-    
+                <ul class="links__list aside__list">
+                    <li class="links__item svg-list-item links-website">
+                        <a href="https://unendlicheweite.de" class="links__link link">unendlicheweite.de</a>
+                    </li>
+                    <li class="links__item svg-list-item links-article">
+                        <a href="#" class="links__link link ">Another ACME article</a>
+                    </li>
+                    <li class="links__item svg-list-item links-website">
+                        <a href="https://somewhere.org" class="links__link link">somewhere.org</a>
                     </li>
                 </ul>
             </div>
@@ -172,6 +184,7 @@
                     <span class="questions__group">
                         <label class="questions__label" for="country">Country</label>
                         <select class="questions__input" name="country" id="country">
+                            <option hidden disabled selected value=""></option>
                             <option value="Germany">Germany</option>
                             <option value="England">England</option>
                         </select>
@@ -186,7 +199,10 @@
                     </span>
                     <div class="questions__submit">
                         <button class="btn questions__submit-btn" type="submit">
-                            <img class="submit__img" src="./assets/Icons/Arrow-Right.svg" alt="">
+                            <span class="submit__img-container">                                
+                                <img class="submit__img" src="./assets/Icons/Arrow-Right.svg" alt="">
+                            </span>
+
                             <span>Send</span>
                     </button>
                     </div>
