@@ -27,6 +27,11 @@ img {
     max-width: 100%;
 }
 
+.grid {
+    display: grid;
+
+}
+
 
 /* FONT STYLES */
 
@@ -160,18 +165,16 @@ p {
 
 .container {
     border: 1px solid red;
-    background-color: green;
-    margin: 2rem;
+    /* background-color: green; */
+    margin: 1.5rem;
 }
 
 /* SECTIONS */
 
 /* HEADER */
 .header {
-    width: 100%;
     background: var(--color-white);
     border: 1px solid red;
-    padding: 1em;
 }
 
 .header__logo {
@@ -186,23 +189,24 @@ p {
 /* ASIDE */
 .section__bg {
     background: var(--color-green-light);
+    padding: 2.5em;
 }
 
 .section__title {
     color: var(--color-green-light);
-    position: relative;
-    top: 0.25em;
+    font-size: 10rem;
 }
 
+.aside {
+    border: 1px solid blue;
+    margin: 1em 0;
+}
+
+/* CONTACT */
 
 /* DOWNLOADS */
-.downloads__list {
-    list-style-type: circle;
-}
-
-
-/* .downloads__item {
-    text-decoration: none;
+/* .downloads__list {
+    list-style: circle;
 } */
 
 .downloads__container {
@@ -219,9 +223,96 @@ p {
     filter: invert(1);
 }
 
+/* QUESTIONS FORM */
+.questions {
+    border: 1px solid red;
+    background-image: url('../assets/pics/Palms.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--color-white);
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+/* .questions__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+} */
+
+.questions__group {
+    margin-top: 0.8em;
+    display: flex;
+    flex-direction: column;
+}
+
+.questions__input {
+    padding: 0.7em;
+}
+
+.questions__privacy-consent {
+    margin-top: 1.5em;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.questions__privacy-checkbox {
+    margin-top: 0.35em;
+}
+
+.questions__submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit__img {
+    filter: invert(1);
+}
+
+
+
 
 /* FOOTER */
-
 .footer {
     border: 1px solid red;
+    background: var(--color-ink);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__socials,
+.footer__legal {
+    width: 50%;
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__socials-elem {
+    background: var(--color-yellow);
+    display: inline-block;
+    padding: 0.5em;
+    margin-left: 0.25em;
+}
+
+.footer__socials-elem__svg{
+    height: 2em;
+    filter: invert(1);
+}
+
+.footer__legal-link {
+    margin-right: 1em;
+}
+
+.footer__copyright {
+    color: var(--color-white);
 }
