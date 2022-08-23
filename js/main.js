@@ -1,6 +1,7 @@
 /* TOGGLE NAV  */
-const navToggle = document.querySelector('.nav__toggle')
-const nav = document.querySelector('.nav__list')
-navToggle.addEventListener('click', () => {
-    nav.classList.toggle('nav--visible')
+document.addEventListener('DOMContentLoaded', () => {
+    const nav = document.querySelector('.nav__items')
+    document.getElementById('nav-btn').addEventListener('click', () => {
+        nav.classList.toggle('nav--open')
+    })
 })
