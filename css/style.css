@@ -196,7 +196,6 @@ p {
 /* MAIN NAV */
 .header {
     background: var(--color-white);
-    border: 1px solid red;
     position: fixed;
     top: 0;
     left: 0;
@@ -238,7 +237,6 @@ p {
 
 .nav__item {
     margin: 1em 0 1em 2em;
-    border: 1px solid red;
 }
 
 .nav__link {
@@ -300,9 +298,9 @@ p {
 }
 
 /* MAIN ARTICLE*/
-.article__img-container {
+/* .article__img-container {
     margin-top: 2em;
-}
+} */
 
 .article__img {
     aspect-ratio: 16/5;
@@ -353,7 +351,6 @@ p {
 
 
 .news__header {
-    border: 1px solid blue;
     margin-top: var(--header-height); 
 }
 
@@ -371,8 +368,11 @@ p {
 }
 
 .breadcrumbs__nav {
-    border: 1px solid green;
     background: var(--color-yellow);
+    display: flex;
+    align-items: center;
+    height: 3.5em;
+    margin-bottom: 2em;
 }
 
 .breadcrumbs__ul {
@@ -407,6 +407,7 @@ p {
     display: flex;
     flex-direction: column;
     padding: 2em 0 0 20%;
+    margin: 3em 0;
 }
 
 .quote__quotee {
@@ -618,21 +619,29 @@ p {
     color: var(--color-white);
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES DESKTOP*/
 
 @media screen and (min-width: 1024px){
-    h1 {
-        color: red !important;
+
+    /* CONTAINERS-DESKTOP*/
+    .container {
+        margin: 5rem;
     }
-    /* MAIN LAYOUT */
+    .aside-container {
+        margin-left: 0;
+    }
+    .footer__container {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* MAIN-DESKTOP */
     .main-content-container {
-        border: 5px solid green;
         display: flex;
         flex-wrap: wrap;
     }
 
     .main-aside-container {
-        border: 5px solid orange;
         display: flex;
     }
 
@@ -647,7 +656,7 @@ p {
     .news__header {
         width: 100%;
     }
-    /* FORM LAYOUT */
+    /* FORM-DESKTOP*/
     .questions__wrapper {
         display: flex;
         flex-wrap: wrap;
