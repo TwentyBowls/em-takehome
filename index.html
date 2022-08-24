@@ -219,42 +219,43 @@
             <h2 class="questions__title">Do you have any questions?</h2>
             <form action="" class="questions__form">
                 <div class="questions__wrapper">
-                    <span class="questions__group">
-                        <label class="questions__label" for="name">Name</label>
-                        <input class="questions__input" type="text" id="name" required>
-                    </span>
-                    <span class="questions__group">
-                        <label class="questions__label" for="email">Email</label>
-                        <input class="questions__input" type="email" id="email" required>
-                    </span>
-                    <span class="questions__group">
-                        <label class="questions__label" for="phone">Phone (optional)</label>
-                        <input class="questions__input" type="tel" id="phone">
-                    </span>
-                    <span class="questions__group">
-                        <label class="questions__label" for="country">Country</label>
-                        <select class="questions__input" name="country" id="country">
-                            <option hidden disabled selected value=""></option>
-                            <option value="Germany">Germany</option>
-                            <option value="England">England</option>
-                        </select>
-                    </span>
-                    <span class="questions__group">
-                        <label class="questions__label" for="message">Your Message</label>
-                        <textarea class="questions__input" name="message" id="message" cols="20" rows="10"></textarea>
-                    </span>
-                    <span class="questions__group questions__privacy-consent">
-                        <input class="questions__input questions__privacy-checkbox" type="checkbox" id="privacy" name="privacy" value="true">
-                        <label class="questions__label" for="privacy">I hereby consent to the processing of my data in accordance with the <a class="link" href="">privacy information</a>.</label>
-                    </span>
-                    <div class="questions__submit">
-                        <button class="btn questions__submit-btn" type="submit">
-                            <span class="submit__img-container">                                
-                                <img class="submit__img" src="./assets/Icons/Arrow-Right.svg" alt="">
-                            </span>
-
-                            <span>Send</span>
-                    </button>
+                    <div class="questions__personal-info">
+                        <span class="questions__group">
+                            <label class="questions__label" for="name">Name</label>
+                            <input class="questions__input" type="text" id="name" required>
+                        </span>
+                        <span class="questions__group">
+                            <label class="questions__label" for="email">Email</label>
+                            <input class="questions__input" type="email" id="email" required>
+                        </span>
+                        <span class="questions__group">
+                            <label class="questions__label" for="phone">Phone (optional)</label>
+                            <input class="questions__input" type="tel" id="phone">
+                        </span>
+                        <span class="questions__group">
+                            <label class="questions__label" for="country">Country</label>
+                            <select class="questions__input" name="country" id="country">
+                                <option hidden disabled selected value=""></option>
+                                <option value="Germany">Germany</option>
+                                <option value="England">England</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div class="questions__message">
+                        <span class="questions__group questions__txt">
+                            <label class="questions__label" for="message">Your Message</label>
+                            <textarea class="questions__input" name="message" id="message" cols="20" rows="10"></textarea>
+                        </span>
+                    </div>
+                    <div class="questions__controls">
+                        <span class="questions__group questions__privacy-consent">
+                            <input class="questions__input questions__privacy-checkbox" type="checkbox" id="privacy" name="privacy" value="true">
+                            <label class="questions__label" for="privacy">I hereby consent to the processing of my data in accordance with the <a class="link" href="">privacy information</a>.</label>
+                        </span>
+                            <button class="btn questions__submit" type="submit">                           
+                                    <img class="submit__img" src="./assets/Icons/Arrow-Right.svg" alt="">
+                                <span>Send</span>
+                            </button>
                     </div>
                 </div>
             </form>
@@ -284,7 +285,7 @@
                 </a>
             </div>
             <div class="footer__copyright">
-                <span><img src="" alt=""></span><p>2021 ACME. Part of the <a href="" class="link">ACME Group</a></p>
+                <p>C 2021 ACME. Part of the <a href="" class="link">ACME Group</a></p>
             </div>
         </div>
     </footer>
