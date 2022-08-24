@@ -95,6 +95,13 @@ img {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat/Montserrat-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* TEXT */
 h1 {
     font-family: 'Oswald', sans-serif;
@@ -117,6 +124,10 @@ blockquote {
     font-weight: 400;
     font-size: 2.0rem;
     line-height: 2.8rem;
+}
+
+blockquote {
+    color: var(--color-green);
 }
 
 h4 {
@@ -297,6 +308,33 @@ p {
     object-fit: cover;
 }
 
+.article__title,
+.article__heading {
+    color: var(--color-green);
+}
+
+.article__subheading {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.article__text {
+    margin-bottom: 2em;
+}
+
+.article__list {
+    margin: 0 0 2em 2em;
+}
+
+.article__list-item{
+    list-style-image: url('../assets/Icons/Arrowhead-Right.svg');
+    margin: 0.1em 0;
+}
+
+.article__list-item::marker{
+    font-size: 3em ;
+}
+
 /* NEWS HEADER */
 .news {
     border: 1px solid red;
@@ -346,10 +384,33 @@ p {
     color: var(--color-white);
 }
 
+/* QUOTE */
+.quote {
+    background: linear-gradient(
+        to right,
+        var(--color-green-light) 0%,
+        var(--color-green-light) 50%,
+        var(--color-white) 50%,
+        var(--color-white) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0 0 20%;
+}
+
+.quote__quotee {
+    align-self: flex-end;
+}
+
+
 /* ASIDE */
 .section__bg {
     background: var(--color-green-light);
     padding: 2.5em;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto; */
 }
 
 .section__title {
@@ -358,13 +419,18 @@ p {
     line-height: 1em;
     position: relative;
     top: 0.05em;
+    /* align-self: flex-start; */
 }
 
 .aside {
     border: 1px solid blue;
-    margin: 1em 0;
-    margin-bottom: 5vh;
-    /* overflow: auto; */
+    margin: 0 0 5vh 0;
+    /* margin-bottom: 5vh; */
+/*     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    
 }
 
 .aside__list {
@@ -381,9 +447,6 @@ p {
 }
 
 /* CONTACT */
-.contact__options {
-
-}
 .contact__phone,
 .contact__time {
     margin: 0;
