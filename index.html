@@ -24,14 +24,19 @@
             <nav class="nav">
                 <ul class="nav__items">
                     <li class="nav__item">
-                        <a href="" class="nav__link link--nav">Products</a>
+                        <a class="nav__link link--nav nav__submenu-btn">Products</a>
+                        <ul class="nav__submenu">
+                            <li><a class="nav__link--sub link--nav">Cake</a></li>
+                            <li><a class="nav__link--sub link--nav">Random Stuff</a></li>
+                            <li><a class="nav__link--sub link--nav">Oil</a></li>
+                        </ul>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link link--nav nav__submenu-btn">Industries</a>
-                            <ul class="nav__submenu" id="industries">
-                                <li><a class="nav__link link--nav">Automotive</a></li>
-                                <li><a class="nav__link link--nav">Aerospace</a></li>
-                                <li><a class="nav__link link--nav">General Industries</a></li>
+                        <a class="nav__link link--nav nav__submenu-btn">Industries</a>
+                            <ul class="nav__submenu">
+                                <li><a class="nav__link--sub link--nav">Automotive</a></li>
+                                <li><a class="nav__link--sub link--nav">Aerospace</a></li>
+                                <li><a class="nav__link--sub link--nav">General Industries</a></li>
                             </ul>
                     </li>
                     <li class="nav__item">
@@ -53,37 +58,39 @@
 <section class="main-content-container">
     <header class="news__header">
         <div class="news__header-highlight">
-            <div class="container-sides">
+            <div class="container-sides side__container">
                 <h1 class="news__title">News</h1>
             </div>
         </div>
         <div class="breadcrumbs__nav">
-            <ul class="breadcrumbs__ul container-sides">
-                <li>
-                    <a href="" class="breadcrumb">Media</a>
-                </li>
-                <li class="breadcrumbs__connection">
-                    <img class="breadcrumbs__arrow" src="./assets/Icons/Arrow-Right.svg" alt="">
-                </li>
-                <li>
-                    <a href="" class="breadcrumb">News</a>
-                </li>
-                <li class="breadcrumbs__connection">
-                    <img class="breadcrumbs__arrow" src="./assets/Icons/Arrow-Right.svg" alt="">
-                </li>
-                <li>
-                    <a href="" class="breadcrumb breadcrumb--current">Article</a>
-                </li>
-            </ul>
+            <div class="side__container">
+                <ul class="breadcrumbs__ul container-sides">
+                    <li>
+                        <a href="" class="breadcrumb">Media</a>
+                    </li>
+                    <li class="breadcrumbs__connection">
+                        <img class="breadcrumbs__arrow" src="./assets/Icons/Arrow-Right.svg" alt="">
+                    </li>
+                    <li>
+                        <a href="" class="breadcrumb">News</a>
+                    </li>
+                    <li class="breadcrumbs__connection">
+                        <img class="breadcrumbs__arrow" src="./assets/Icons/Arrow-Right.svg" alt="">
+                    </li>
+                    <li>
+                        <a href="" class="breadcrumb breadcrumb--current">Article</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
+    <div class="article__img-container container">
+        <img class="article__img" src="./assets/pics/News_1.jpeg" alt="Arctic landscape">
+    </div>
     <div class="main-aside-container">
     <main class="news">
         <article class="article">
             <div class="container article-container">
-                <div class="article__img-container">
-                    <img class="article__img" src="./assets/pics/News_1.jpeg" alt="Arctic landscape">
-                </div>
                 <span class="info"><time datetime="2021-08-23">23 / 08 / 2021</time></span>
                 <h2 class="article__title">The Smallest and shallowest World's Major Oceans</h2>
                 <p class="article__text">
