@@ -505,6 +505,10 @@ p {
 
 /* DOWNLOADS */
 
+.downloads__item-limiter {
+    display: flex;
+}
+
 .downloads__item:nth-child(even){
     list-style-image: url('../assets/Icons/File.svg');
 }
