@@ -8,7 +8,13 @@
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-</head>
+    <!-- SWIPER -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    </head>
 <body>
     <!-- <h1>h1</h1>
     <h2>h2</h2>
@@ -117,11 +123,36 @@
                 <p class="article__text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, nam! Beatae non, architecto debitis culpa qui quo id labore sed reprehenderit excepturi, totam laboriosam voluptatibus vitae aut aperiam minima illo, ut et! Rem pariatur minima numquam! Quod magnam aliquid qui deserunt soluta sint nulla asperiores facilis perferendis reiciendis eius nesciunt delectus quo eum explicabo, quidem possimus ullam aut laborum nihil.
                 </p>
-                <section class="article__gallery">
-                        <img src="" alt="" class="gallery__img">
+                <section class="gallery-container">
+                    <section class="article__gallery">
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide" id="slide-one">Slide 1</div>
+                            <div class="swiper-slide" id="slide-two">Slide 2</div>
+                            <div class="swiper-slide" id="slide-three">Slide 3</div>
+                            ...
+                            </div>
+                            <!-- If we need pagination -->
+                            <!-- <div class="swiper-pagination"></div> -->
+                        
+                            <!-- If we need navigation buttons -->
+                            <div class="swipter-button-container">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+
+                        
+                            <!-- If we need scrollbar -->
+                            <!-- <div class="swiper-scrollbar"></div> -->
+                        </div>
                         <span class="info">
                             Picture 1 of 5
                         </span>
+                </section>
+                    
                 </section>
                 <p class="article__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, earum sequi. Illum aliquam reprehenderit, amet vel voluptates quia. Amet ut optio officia beatae. Velit dignissimos at officia tempore enim, sit voluptatibus iure maiores adipisci dolorum? Fuga sed incidunt fugit quidem!
