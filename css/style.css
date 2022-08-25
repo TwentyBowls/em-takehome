@@ -403,13 +403,13 @@ p {
 }
 
 .gallery-container {
-    padding: 1.5vh 0 2.5vh 0;
+    padding: 1.5vh 0 1rem 0;
     margin-bottom: 5vh;
     border-bottom: 0.4em solid var(--color-yellow);
 }
 
 .gallery__current-img {
-    margin: 2.5vh 0 0 1em;
+    margin: 1rem 0 0 1em;
 }
 
 .swiper {
@@ -443,16 +443,6 @@ p {
     transform: rotate(90deg);
 }
 
-.swiper-button-prev {
-    /* transform: rotate(90deg); */
-}
-
-.swiper-button-next {
-    /* transform: rotate(90deg); */
-    /* position: absolute; */
-
-}
-
 /* NEWS HEADER */
 
 .news__header {
@@ -461,6 +451,8 @@ p {
 
 .news__header-highlight {
     background: url('../assets/pics/Palms.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 20vh;
     display: flex;
     align-items: center;
@@ -762,11 +754,14 @@ p {
         margin-right: 1.5em;
     }
     .footer__container,
-    .article__img-container,
     .questions__container,
     .header__container,
     .news__container {
         margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .article__img-container {
         margin-bottom: 0;
     }
 
@@ -825,19 +820,33 @@ p {
     }
 
     /* GALLERY-DESKTOP */
+
     .article__gallery {
-        position: static;
-        max-width: calc(75vw - 7vw);
+        margin-right: 0 !important;
+        position:  static;
+        max-width: 57vw;
+        
+    }
+
+    .swiper {
+        position: relative !important;
     }
 
     .swiper-button-prev,
     .swiper-button-next {
         display: flex !important;
-        align-items: center;
-        justify-content: center;
+        position: absolute !important;
+        left: 90% !important;
+        left: calc(100% - 8em) !important;
     }
 
+
     .swiper-button-prev {
+        top: 65% !important;
+    }
+
+    .swiper-button-next {
+        top: 95% !important;
     }
 
     .gallery__current-img {
