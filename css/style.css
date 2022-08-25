@@ -1,10 +1,41 @@
+/* ----------------------------- */
 /* TABLE OF CONTENTS */
-
-/* ITEM 1 */
-/* ITEM 2 */
-/* ITEM 3 */
+/* ----------------------------- */
 
 /* BASIC STYLES AND COLORS*/
+    /* FONT STYLES */
+        /* OSWALD */
+        /* MONTSERRAT */
+    /* TEXT */
+    /* CONTAINERS*/
+
+/* SECTIONS */
+    /* MAIN NAV */
+        /* HAMBURGER */
+    /* MAIN ARTICLE*/
+    /* IMAGE GALLERY */
+    /* NEWS HEADER */
+    /* QUOTE */
+    /* ASIDE */
+        /* CONTACT */
+        /* DOWNLOADS */
+        /* LINKS */
+    /* QUESTIONS FORM */
+    /* FOOTER */
+
+/* MEDIA QUERIES */
+    /* MEDIA QUERIES DESKTOP 1024px*/
+        /* CONTAINERS-DESKTOP*/
+        /* HEADER DESKTOP */
+        /* NAV DESKTOP */
+        /* MAIN-DESKTOP */
+        /* GALLERY-DESKTOP */
+        /* FORM-DESKTOP*/
+
+
+/* ----------------------------- */
+/* BASIC STYLES AND COLORS*/
+/* ----------------------------- */
 *, 
 ::before, 
 ::after {
@@ -143,6 +174,7 @@ p {
     font-weight: 300;
     font-size: 1.4rem;
     line-height: 2.0rem;
+    text-transform: uppercase;
 }
 
 .link {
@@ -192,12 +224,9 @@ p {
     margin: 0 1.5rem;
 }
 
-/* .flex--vert-center {
-    display: flex;
-    align-items: center;
-} */
-
+/* ----------------------------- */
 /* SECTIONS */
+/* ----------------------------- */
 
 /* MAIN NAV */
 .header {
@@ -210,6 +239,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 999;
 }
 
 .header__container {
@@ -245,7 +275,6 @@ p {
     z-index: 1;
     white-space: nowrap;
     padding: 2em;
-    /* margin-top: 2em; */
 }
 
 .nav__submenu > li {
@@ -255,9 +284,6 @@ p {
 .nav__item:hover .nav__submenu{
     display: block;
 }
-
-
-/* .nav__subcategory:hover */
 
 .nav__item {
     margin: 1em 0;
@@ -276,10 +302,6 @@ p {
 .nav__link--sub {
     color: var(--color-white);
 }
-
-/* .nav__link--active {
-    color: var(--color-yellow) ;
-} */
 
 .link--nav {
     text-decoration: none;
@@ -329,14 +351,11 @@ p {
 }
 
 /* MAIN ARTICLE*/
-/* .article__img-container {
-    margin-top: 2em;
-    width: 100%;
-} */
 
 .article__img {
     aspect-ratio: 16/5;
     object-fit: cover;
+    min-width: 100%;
 }
 
 .article__title,
@@ -367,9 +386,13 @@ p {
     margin: 0.1em 0;
 }
 
+.article__list-item > p {
+    position: relative;
+    top: -0.25em;
+}
+
 .article__list-item::marker{
     font-size: 4em ;
-
 }
 
 /* IMAGE GALLERY */
@@ -380,9 +403,13 @@ p {
 }
 
 .gallery-container {
-    padding: 5vh 0 5vh 0;
+    padding: 1.5vh 0 2.5vh 0;
     margin-bottom: 5vh;
     border-bottom: 0.4em solid var(--color-yellow);
+}
+
+.gallery__current-img {
+    margin: 2.5vh 0 0 1em;
 }
 
 .swiper {
@@ -426,8 +453,6 @@ p {
 
 }
 
-
-
 /* NEWS HEADER */
 
 .news__header {
@@ -439,7 +464,6 @@ p {
     height: 20vh;
     display: flex;
     align-items: center;
-
 }
 
 .news__title {
@@ -535,6 +559,9 @@ p {
     margin: 0.5em 0;
 }
 
+.svg-list-item::marker {
+    /* fill: red; */
+}
 
 /* CONTACT */
 .contact__phone,
@@ -549,6 +576,8 @@ p {
 .contact__tel,
 .contact__availablity {
     margin-left: 1em;
+    position: relative;
+    bottom: .5em;
 }
 
 .contact__phone {
@@ -558,7 +587,6 @@ p {
 .contact__time {
     list-style-image: url('../assets/Icons/Clock.svg');
 }
-
 
 /* DOWNLOADS */
 
@@ -596,6 +624,8 @@ p {
 /* LINKS */
 .links__link {
     text-transform: uppercase;
+    position: relative;
+    top: -.5em;
 }
 
 .links__item {
@@ -647,7 +677,6 @@ p {
 }
 
 .questions__privacy-consent {
-    /* margin: 1.5em 0; */
     flex-direction: row;
     align-items: center;
     width: 100%;
@@ -709,7 +738,11 @@ p {
     color: var(--color-white);
 }
 
-/* MEDIA QUERIES DESKTOP*/
+/* ----------------------------- */
+/* MEDIA QUERIES */
+/* ----------------------------- */
+
+/* MEDIA QUERIES DESKTOP 1024px*/
 
 @media screen and (min-width: 1024px){
 
@@ -807,6 +840,10 @@ p {
     .swiper-button-prev {
     }
 
+    .gallery__current-img {
+        margin-left: 0;
+    }
+
     /* FORM-DESKTOP*/
     .questions__wrapper {
         display: flex;
@@ -831,5 +868,4 @@ p {
     #message {
         height: 88%;
     }
-
 }
